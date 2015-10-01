@@ -1,7 +1,7 @@
 # Youtrack docker
 Docker image for Youtrack
 
-- Version: 6.5.16713
+- Version: 6.5.16807
 - For importing data from my older seti/docker-youtrack just use the same Data Dir and select the "upgrade procedure" on first start in webinterface.
 
 
