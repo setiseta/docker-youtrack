@@ -17,10 +17,12 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 mkdir $DIR/data
 chown 1000:1000 $DIR/data
 docker run -d \
-        -m 2g \
-        -v $DIR/data:/data \
-        --name $NAME \
-        --restart=always \
-        -p 80:80 \
-        seti/youtrack
+	-m 2g \
+	-v $DIR/data:/data \
+	-e BASE_URL=[your URL] \
+	--name $NAME  \
+	-p 8080:8080 \
+	--restart=always \
+	-p 80:80 \
+	seti/youtrack
 ```
