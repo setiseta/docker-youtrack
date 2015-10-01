@@ -21,6 +21,6 @@ docker run -d \
         -v $DIR/data:/data \
         --name $NAME \
         --restart=always \
-        -p 8080:8080 \
+        -p 80:80 \
         seti/youtrack
 ```
