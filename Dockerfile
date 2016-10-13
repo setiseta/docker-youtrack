@@ -2,7 +2,7 @@ FROM java:latest
 
 MAINTAINER Seti <seti@setadesign.net>
 
-ENV APP_BUILD 6.5.17105
+ENV APP_BUILD 7.0.27705
 ENV APP_HOME /data
 
 RUN curl --insecure -L https://download.jetbrains.com/charisma/youtrack-$APP_BUILD.zip -o /opt/youtrack.zip && \
