@@ -9,6 +9,7 @@ RUN curl --insecure -L https://download.jetbrains.com/charisma/youtrack-$APP_BUI
 	mkdir /opt/youtrack -p && cd /opt/youtrack/ && \
 	unzip /opt/youtrack.zip && \
 	rm -f /opt/youtrack.zip && \
+	mv youtrack-* youtrack && \
 	rm -rf /opt/youtrack/internal/java && \
 	mkdir $APP_HOME && \
 	groupadd -r youtrack && \
