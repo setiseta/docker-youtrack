@@ -6,7 +6,7 @@ ENV APP_BUILD 7.0.27705
 ENV APP_HOME /data
 
 RUN curl --insecure -L https://download.jetbrains.com/charisma/youtrack-$APP_BUILD.zip -o /opt/youtrack.zip && \
-	mkdir /opt/youtrack -p && cd /opt/youtrack/ && \
+	cd /opt && \
 	unzip /opt/youtrack.zip && \
 	rm -f /opt/youtrack.zip && \
 	mv youtrack-* youtrack && \
