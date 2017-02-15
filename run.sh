@@ -3,7 +3,7 @@
 if [ ! -e $APP_HOME/conf ];
 then
 	echo "first run: starting configure"
-	cp -rp /opt/youtrack/conftemplate $APP_HOME/
+	cp -rp /opt/youtrack/conftemplate $APP_HOME/conf
 	ln -s $APP_HOME/conf /opt/youtrack/conf
 	bin/youtrack.sh configure \
 		--backups-dir $APP_HOME/backups \
