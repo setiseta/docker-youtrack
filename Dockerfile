@@ -14,7 +14,8 @@ RUN curl --insecure -L https://download.jetbrains.com/charisma/youtrack-$APP_BUI
 	mkdir $APP_HOME && \
 	groupadd -r youtrack && \
 	useradd -r -g youtrack -u 1000 -d $APP_HOME youtrack && \
-	chown -R youtrack:youtrack $APP_HOME /opt/youtrack
+	chown -R youtrack:youtrack $APP_HOME /opt/youtrack && \
+	mv /opt/youtrack/conf /opt/youtrack/conftemplate
 
 WORKDIR /opt/youtrack
 ADD run.sh /opt/youtrack/
