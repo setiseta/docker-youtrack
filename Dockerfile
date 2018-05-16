@@ -1,8 +1,8 @@
 FROM java:latest
 
-MAINTAINER Seti <seti@setadesign.net>
+LABEL maintainer="Seti <seti@setadesign.net>"
 
-ENV APP_BUILD 2018.1.40066
+ENV APP_BUILD 2018.1.41561
 ENV APP_HOME /data
 
 RUN curl --insecure -L https://download.jetbrains.com/charisma/youtrack-$APP_BUILD.zip -o /opt/youtrack.zip && \
